@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CloudyMotion | Store</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="../images/logo/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="../style/store.css">
+</head>
+<body style="overflow: hidden;">
+	<div class="preloader df">
+		<div></div>
+		<div class="preloader__loading df">
+			<svg class="preloader__loading-item preloader__loading-item_1" width="834pt" height="834pt" viewBox="0 0 834 834" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 834) scale(.1 -.1)" fill="#ECF1FF"><path d="m3865 8329c-278-20-315-31-349-103-43-91 11-197 108-213 19-3 64 3 102 13 101 27 715 28 914 1 598-81 1116-266 1605-576 472-298 898-724 1197-1197 327-518 517-1068 583-1689 20-187 20-591 0-782-76-723-332-1376-764-1947-276-367-655-713-1040-953-478-298-995-481-1581-560-108-14-203-18-475-18-372 0-465 8-765 66-518 101-1047 329-1475 634-311 222-622 522-843 812-34 45-62 86-62 90 0 5-18 30-40 57-22 26-40 43-40 37s-11-8-30-5c-49 10-98-5-135-41-60-60-60-150 0-210 19-19 35-37 35-41 0-11 132-176 236-294 922-1048 2314-1563 3704-1369 1733 242 3138 1552 3499 3264 312 1477-195 3003-1329 3998-841 738-1942 1108-3055 1026z"/></g></svg>
+			<svg class="preloader__loading-item preloader__loading-item_2" width="834pt" height="834pt" viewBox="0 0 834 834" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 834) scale(.1 -.1)" fill="#ECF1FF"><path d="m3870 7590c-165-14-190-20-229-55-35-32-36-36-36-104 0-63 3-72 29-100 44-46 84-56 164-40 108 22 665 19 807-4 408-67 757-185 1079-364 758-422 1303-1123 1521-1958 173-658 123-1365-139-2e3 -93-224-260-509-413-708-441-569-1062-971-1758-1137-269-64-337-72-659-77-334-6-443 2-666 47-429 86-824 251-1175 491-311 212-566 464-800 792-30 41-32 42-95 45-72 3-115-16-146-63-21-32-23-126-3-154 589-812 1413-1307 2394-1438 183-24 667-24 849 0 765 103 1418 415 1958 936 296 285 516 586 698 956 235 476 350 975 350 1515 0 794-258 1530-756 2155-113 141-378 406-519 519-542 432-1183 689-1860 746-132 11-462 11-595 0z"/></g></svg>
+		</div>
+		<div></div>
+	</div>
+	<header class="header">
+		<div class="container unselect">
+			<div class="header__row header__row_1 df">
+				<div class="header__column_1 df">
+					<div class="header__logo-block">
+						<a class="header__logo-link" href="../">
+							<img class="header__img" src="../images/logo/logo.svg" alt="Cloudy Motion">
+						</a>
+					</div>
+				</div>
+				<div class="header__column_2 df">
+					<div class="header__nav">
+						<ul class="header__list df">
+							<li class="header__item header__item_1" data-section="services">Services</li>
+							<li class="header__item header__item_2" data-section="beats">Beats</li>
+						</ul>
+					</div>
+					<div class="header__cart-block">
+						<button class="header__cart df">
+							<span class="icon-cart"></span>
+							<span class="icon-close"></span>
+						</button>
+						<span class="header__cart-counter" id="cart-counter"></span>
+					</div>
+				</div>
+			</div>
+			<div class="header__row header__row_2">
+				<div class="header__column header__column_1">
+					<div class="header__item" data-section="services">Services</div>
+				</div>
+				<div class="header__column header__column_2">
+					<div class="header__item" data-section="beats">Beats</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="basket df">
+		<div class="basket__body df">
+			<div class="basket__content basket__content_empty df">
+				<h2 class="basket__title">Cart</h2>
+				<h3 class="basket__subtitle">Your Purchases:</h3>
+				<hr class="basket__line">
+				<div class="basket__list-wrapper">
+					<div class="basket__list-empty basket__list-empty_show unselect">
+						<span class="icon-butterfly basket__list-empty-icon"></span>
+						<p class="basket__list-empty-paragraph">There isn’t any products yet. <br> Add something, that it doesn’t look so empty…</p>
+					</div>
+					<div class="basket__list"></div>
+				</div>
+				<div class="basket__bottom-block">
+					<div class="basket__row df">
+						<div class="basket__column df">
+							<div class="basket__total-price-block">
+								<div class="basket__total-price-title">Total Price:</div>
+								<div class="basket__total-price-row df">
+									<span class="basket__total-price">$0</span>
+									<sup class="basket__total-price_all unselect"></sup>
+								</div>
+							</div>
+						</div>
+						<div class="basket__column unselect df" id="payment-container">
+							<!-- <div class="basket__link-lay"></div>
+							<button class="basket__link basket__link_lock">
+								<span>Checkout</span>
+							</button> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="offers">
+		<div class="container">
+			<div class="offers__slider swiper-container">
+				<div class="offers__wrapper swiper-wrapper">
+					<div class="offers__slide swiper-slide swiper-slide_1">
+						<img class="offers__bundle swiper-lazy" src="../images/store/bundle-content/bundle-bgi.jpg" alt="Fully Loaded Bundle">
+						<div class="swiper-lazy-preloader swiper-lazy-preloader_purple"></div>
+					</div>
+					<div class="offers__slide swiper-slide swiper-slide_2">
+						<img class="offers__bundle swiper-lazy" src="../images/store/bundle-content/bundle-bgi.jpg" alt="High Quality">
+						<div class="swiper-lazy-preloader swiper-lazy-preloader_purple"></div>
+					</div>
+					<div class="offers__slide swiper-slide swiper-slide_3">
+						<img class="offers__bundle swiper-lazy" src="../images/store/bundle-content/bundle-bgi.jpg" alt="Instagram Promo 10%">
+						<div class="swiper-lazy-preloader swiper-lazy-preloader_purple"></div>
+					</div>
+				</div>
+				<div class="offers__pagination"></div>
+			</div>
+		</div>
+	</section>
+	<section class="services">
+		<div class="container">
+			<div class="services__title-block title-block">
+				<h2 class="title-block__title">Services</h2>
+			</div>
+			<div class="services__row df">
+				<div class="services__column services__column_1 df">
+					<div class="service service_1 df" data-popup="artwork" data-popup-type="service">
+						<div class="service__title-row df">
+							<div class="service__title-column">
+								<div class="service__icon-block">
+									<span class="icon-artwork"></span>
+								</div>
+							</div>
+							<div class="service__title-column">
+								<h2 class="service__title service__title_bigger">Artwork</h2>
+							</div>
+						</div>
+						<div class="service__content-row df">
+							<div class="service__content-column">
+								<div class="service__btn-block">
+									<button class="service__btn" data-popup="artwork" data-popup-type="service">Start Now</button>
+								</div>
+							</div>
+							<div class="service__content-column">
+								<div class="service__content">
+									<p class="service__text">Need a cover art for your music?Want this to look professional? We are ready to help you!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="services__column services__column_2 df">
+					<div class="service service_2 df" data-popup="visuals" data-popup-type="service">
+						<div class="service__title-row df">
+							<div class="service__title-column">
+								<div class="service__icon-block">
+									<span class="icon-visuals"></span>
+								</div>
+							</div>
+							<div class="service__title-column">
+								<h2 class="service__title service__title_bigger">Visuals</h2>
+							</div>
+						</div>
+						<div class="service__content-row df">
+							<div class="service__content-column">
+								<div class="service__btn-block">
+									<button class="service__btn" data-popup="visuals" data-popup-type="service">Start Now</button>
+								</div>
+							</div>
+							<div class="service__content-column">
+								<div class="service__content">
+									<p class="service__text">How about an Exclusive animated videos for your music? It’s the thing you really need!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="services__column services__column_3 df">
+					<div class="service service_3 df" data-popup="mixingAndMastering" data-popup-type="service">
+						<div class="service__title-row df">
+							<div class="service__title-column">
+								<div class="service__icon-block">
+									<span class="icon-hexagon"></span>
+								</div>
+							</div>
+							<div class="service__title-column">
+								<h2 class="service__title">Mixing & Mastering</h2>
+							</div>
+						</div>
+						<div class="service__content-row df">
+							<div class="service__content-column">
+								<div class="service__btn-block">
+									<button class="service__btn" data-popup="mixingAndMastering" data-popup-type="service">Start Now</button>
+								</div>
+							</div>
+							<div class="service__content-column">
+								<div class="service__content">
+									<p class="service__text">You have a problem with music production? Our team is ready to solve it!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="services__column services__column_4 df">
+					<div class="service service_4 df" data-popup="order" data-popup-type="service">
+						<div class="service__title-row df">
+							<div class="service__title-column">
+								<div class="service__icon-block">
+									<span class="icon-order"></span>
+								</div>
+							</div>
+							<div class="service__title-column">
+								<h2 class="service__title">Beat For Order</h2>
+							</div>
+						</div>
+						<div class="service__content-row df">
+							<div class="service__content-column">
+								<div class="service__btn-block">
+									<button class="service__btn" data-popup="order" data-popup-type="service">Start Now</button>
+								</div>
+							</div>
+							<div class="service__content-column">
+								<div class="service__content">
+									<p class="service__text">Haven’t found a beat that matches your music style? We are going to make you one!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="beats">
+		<div class="container">
+			<div class="services__title-block title-block">
+				<h2 class="title-block__title">Our Beats</h2>
+			</div>
+			<div class="beats__names-row df">
+				<div class="beats__names-column beats__names-column_1">
+					<div class="beats__column-name">TITLE</div>
+				</div>
+				<div class="beats__names-column beats__names-column_2">
+					<div class="beats__column-name">TIME</div>
+				</div>
+				<div class="beats__names-column beats__names-column_3">
+					<div class="beats__column-name">BPM</div>
+				</div>
+				<div class="beats__names-column beats__names-column_4">
+					<div class="beats__column-name">KEY</div>
+				</div>
+				<div class="beats__names-column beats__names-column_5 df">
+					<div class="beats__column-name">ACTION</div>
+				</div>
+			</div>
+			<audio id="audio" src="#" preload="none"></audio>
+			<div class="beats__tracklist musitem-list"></div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__logo-block">
+				<a class="footer__logo-link" href="../">
+					<img src="../images/logo/logo_shadowed.svg" alt="Cloudy Motion">
+				</a>
+			</div>
+			<div class="footer__nav-row df">
+				<div class="footer__nav-column df">
+					<nav class="footer__nav">
+						<h3 class="footer__nav-title">Services</h3>
+						<ul class="footer__list df">
+							<li class="footer__list-item footer__list-item_link" data-popup="artwork">Artwork</li>
+							<li class="footer__list-item footer__list-item_link" data-popup="visuals">Visuals</li>
+							<li class="footer__list-item footer__list-item_link" data-popup="mixingAndMastering">Mixing and Mastering</li>
+							<li class="footer__list-item footer__list-item_link" data-popup="order">Beat for order</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__nav-column df">
+					<nav class="footer__nav">
+						<h3 class="footer__nav-title">Latest Beats</h3>
+						<div class="footer__lastest-beats"></div>
+					</nav>
+				</div>
+				<div class="footer__nav-column df">
+					<nav class="footer__nav">
+						<h3 class="footer__nav-title">Social Media</h3>
+						<div class="footer__links">
+							<div class="footer__link-block">
+								<a class="footer__link df" href="https://www.instagram.com/cloudymotion4life" target="_blank">
+									<span class="icon-instagram"></span> Instagram
+								</a>
+							</div>
+							<div class="footer__link-block">
+								<a class="footer__link df" href="https://www.youtube.com/channel/UCA6wFvo9hkmZ8hvwoeKhg4g" target="_blank">
+									<span class="icon-youtube"></span> YouTube
+								</a>
+							</div>
+							<div class="footer__link-block">
+								<a class="footer__link df" href="https://t.me/Cloudy_Motion" target="_blank">
+									<span class="icon-telegram"></span> Telegram
+								</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="footer__nav-column df">
+					<nav class="footer__nav">
+						<div class="footer__contact">
+							<div class="footer__contact-block">
+								<div class="footer__contact-block">
+									<a class="footer__contact-link df" href="mailto:cloudymotion93@gmail.com">
+										<span class="icon-email"></span> Contact Us
+									</a>
+								</div>
+								<div class="footer__contact-block">
+									<a class="footer__contact-link" href="../">Landing Page</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright">
+		<div class="container">
+			<div class="copyright__row df">
+				<div class="copyright__column copyright__column_1 df">
+					<div class="copyright__item">©copyright <span class="copyright__author">cloudymotion</span></div>
+				</div>
+				<div class="copyright__column copyright__column_2 df">
+					<div class="copyright__donation-block">
+						<span class="icon-butterfly"></span>
+					</div>
+				</div>
+				<div class="copyright__column copyright__column_3 df">
+					<div class="copyright__item">developer ©copyright <a class="copyright__author" href="https://syxx503.github.io/my-social" target="blank">synfaxx503</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		let subName = "";
+
+		if (window.innerWidth < 540){
+			subName = "-mobile";
+		};
+
+		document.querySelectorAll(".offers__bundle").forEach(function(img, index){
+			img.setAttribute("data-src", `../images/store/bundle-content/bundle_${index + 1}${subName}.jpg`);
+		});
+	</script>
+	<div class="popup popup-service" data-popup-name="artwork">
+		<div class="popup__body df">
+			<div class="popup__window">
+				<div class="popup__close-row df">
+					<div class="popup__close-block">
+						<button class="popup__close">
+							<span class="icon-close"></span>
+						</button>
+					</div>
+				</div>
+				<div class="popup__title-block df">
+					<h2 class="popup__title">Service</h2>
+					<div class="popup__title-decoration"></div>
+					<h3 class="popup__subtitle">Artwork</h3>
+				</div>
+				<div class="popup__row df">
+					<div class="popup__column popup__column_1 df">
+						<div class="popup__content">
+							<div class="popup__content-item">
+								<h4 class="popup__content-title">About</h4>
+								<p class="popup__content-text">Don't know how your artwork should look like? Or you have some ideas about it? We are ready to solve your problem. Our team will create an exclusive artwork that matches your track or an album perfectly.</p>
+							</div>
+							<div class="popup__content-item popup__list-block">
+								<h4 class="popup__list-title">Features</h4>
+								<ul class="popup__list">
+									<li class="popup__list-item">You will recieve the final product 48 hours after placing an order.</li>
+									<li class="popup__list-item">Tell us your ideas about the artwork or rely on our team.</li>
+									<li class="popup__list-item">Experienced graphic designers will be working with your artworks and their work will never leave you indifferent.</li>
+								</ul>
+							</div>
+							<div class="popup__content-item popup__list-block">
+								<h4 class="popup__list-title">You Get</h4>
+								<ul class="popup__list">
+									<li class="popup__list-item">Cool cover art</li>
+									<li class="popup__list-item">Fast feedback</li>
+									<li class="popup__list-item">High quality service</li>
+								</ul>
+							</div>
+							<div class="popup__content-item popup__content-logo">
+								<img class="unselect" src="../images/logo/logo.svg" alt="Cloudy Motion">
+							</div>
+						</div>
+					</div>
+					<div class="popup__column popup__column_2 df">
+						<div class="popup__result df">
+							<div class="popup__input-contain">
+								<div class="popup__content-item popup__list-block">
+									<h4 class="popup__list-title">Required</h4>
+									<ul class="popup__list">
+										<li class="popup__list-item">Email address the artwork will be sent to</li>
+										<li class="popup__list-item">Tell us the way you want the artwork to look like</li>
+										<li class="popup__list-item">Upload the track that we will be making the artwork for</li>
+									</ul>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Email</h4>
+									<div class="popup__input-block popup__input-block_text">
+										<input class="popup__input popup__input_text" type="email">
+										<span class="popup__input-placeholder unselect">example@email.com</span>
+									</div>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Track for artwork</h4>
+									<div class="popup__dbl-info-block">
+										<div class="popup__dbl-info">File format : Wav/Mp3/M4a</div>
+										<div class="popup__dbl-info">Max weight : 30Mb</div>
+									</div>
+									<div class="popup__input-block">
+										<input class="popup__input_file" type="file" accept=".mp3, .wav, .m4a" data-get="beat" data-popup-file="artwork">
+									</div>
+									<div class="popup__filearea">
+										<div class="filearea filearea_empty df" data-popup-area="artwork">
+											<div class="filearea__lay" data-popup-area="artwork"></div>
+											<div class="filearea__text">Upload your<br> files here</div>
+											<div class="filearea__row df">
+												<div class="filearea__column filearea__column_1 df">
+													<div class="filearea__list">
+														<div class="filearea__item filearea__item_1 filearea__item_empty unselect df">
+															<div class="filearea__item-column">
+																<div class="filearea__filename-block df">filename.mp3</div>
+															</div>
+															<div class="filearea__item-column">
+																<div class="filearea__btn-row df">
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-change">
+																			<span class="icon-refresh"></span>
+																		</button>
+																	</div>
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-close">
+																			<span class="icon-close"></span>
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filearea__column filearea__column_2 df">
+													<div class="filearea__panel-block df">
+														<button class="filearea__panel-btn df" data-popup-setfile="artwork">
+															<svg class="filearea__panel-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 0C23.4477 0 23 0.447708 23 1V23H1C0.447693 23 0 23.4477 0 24C0 24.5523 0.447693 25 1 25H23V47C23 47.5523 23.4477 48 24 48C24.5523 48 25 47.5523 25 47V25H47C47.5523 25 48 24.5523 48 24C48 23.4477 47.5523 23 47 23H25V1C25 0.447708 24.5523 0 24 0Z" fill="#ECF1FF"/></svg>
+															<span class="filearea__panel-text">Click To Uploud</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Tell us your wishes</h4>
+									<div class="popup__textarea-block">
+										<textarea class="popup__textarea"></textarea>
+										<div class="popup__textarea-counter"></div>
+									</div>
+								</div>
+							</div>
+							<div class="popup__end-block">
+								<div class="popup__end-row df">
+									<div class="popup__end-total">$20</div>
+									<div class="popup__post-block">
+										<button class="popup__post popup__post_lock unselect" data-product="artwork">
+											<span>Add To Cart</span>
+										</button>
+										<a class="popup__post-link" href="__">Show Contract</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup-service" data-popup-name="visuals">
+		<div class="popup__body df">
+			<div class="popup__window">
+				<div class="popup__close-row df">
+					<div class="popup__close-block">
+						<button class="popup__close">
+							<span class="icon-close"></span>
+						</button>
+					</div>
+				</div>
+				<div class="popup__title-block df">
+					<h2 class="popup__title">Service</h2>
+					<div class="popup__title-decoration"></div>
+					<h3 class="popup__subtitle">Visuals</h3>
+				</div>
+				<div class="popup__row df">
+					<div class="popup__column popup__column_1 df">
+						<div class="popup__content">
+							<div class="popup__content-item">
+								<h4 class="popup__content-title">About</h4>
+								<p class="popup__content-text">Need a cool video for the track? Already have some ideas for that? We are ready to handle that. Our team will create an exclusive video that perfectly matches your track.</p>
+							</div>
+							<div class="popup__content-item popup__list-block">
+								<h4 class="popup__list-title">Features</h4>
+								<ul class="popup__list">
+									<li class="popup__list-item">You will recieve the final product 48 hours after placing an order.</li>
+									<li class="popup__list-item">Discuss every aspect of your future video or rely on us.</li>
+									<li class="popup__list-item">Our team will be creating an awesome video specially for you and their works will never leave indifferent.</li>
+								</ul>
+							</div>
+							<div class="popup__content-item popup__list-block">
+								<h4 class="popup__list-title">You Get</h4>
+								<ul class="popup__list">
+									<li class="popup__list-item">Animated video</li>
+									<li class="popup__list-item">Correction opportunity</li>
+									<li class="popup__list-item">Fast service</li>
+								</ul>
+							</div>
+							<div class="popup__content-item popup__content-logo">
+								<img class="unselect" src="../images/logo/logo.svg" alt="Cloudy Motion">
+							</div>
+						</div>
+					</div>
+					<div class="popup__column popup__column_2 df">
+						<div class="popup__result df">
+							<div class="popup__input-contain">
+								<div class="popup__content-item popup__list-block">
+									<h4 class="popup__list-title">Required</h4>
+									<ul class="popup__list">
+										<li class="popup__list-item">Email eddress the video will be sent to</li>
+										<li class="popup__list-item">Upload the track you want to be used in the video</li>
+										<li class="popup__list-item">Tell us the way you want the project to look like</li>
+									</ul>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Email</h4>
+									<div class="popup__input-block popup__input-block_text">
+										<input class="popup__input popup__input_text" type="email">
+										<span class="popup__input-placeholder unselect">example@email.com</span>
+									</div>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Track for a video</h4>
+									<div class="popup__dbl-info-block">
+										<div class="popup__dbl-info">File format : Wav/Mp3/M4a</div>
+										<div class="popup__dbl-info">Max weight : 30Mb</div>
+									</div>
+									<div class="popup__input-block">
+										<input class="popup__input_file" type="file" accept=".mp3, .wav, .m4a" data-get="beat" data-popup-file="visuals">
+									</div>
+									<div class="popup__filearea">
+										<div class="filearea filearea_empty df" data-popup-area="visuals">
+											<div class="filearea__lay" data-popup-area="visuals"></div>
+											<div class="filearea__text">Upload your<br> files here</div>
+											<div class="filearea__row df">
+												<div class="filearea__column filearea__column_1 df">
+													<div class="filearea__list">
+														<div class="filearea__item filearea__item_1 filearea__item_empty unselect df">
+															<div class="filearea__item-column">
+																<div class="filearea__filename-block df">filename.mp3</div>
+															</div>
+															<div class="filearea__item-column">
+																<div class="filearea__btn-row df">
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-change">
+																			<span class="icon-refresh"></span>
+																		</button>
+																	</div>
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-close">
+																			<span class="icon-close"></span>
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filearea__column filearea__column_2 df">
+													<div class="filearea__panel-block df">
+														<button class="filearea__panel-btn df" data-popup-setfile="visuals">
+															<svg class="filearea__panel-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 0C23.4477 0 23 0.447708 23 1V23H1C0.447693 23 0 23.4477 0 24C0 24.5523 0.447693 25 1 25H23V47C23 47.5523 23.4477 48 24 48C24.5523 48 25 47.5523 25 47V25H47C47.5523 25 48 24.5523 48 24C48 23.4477 47.5523 23 47 23H25V1C25 0.447708 24.5523 0 24 0Z" fill="#ECF1FF"/></svg>
+															<span class="filearea__panel-text">Click To Uploud</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Tell us your wishes</h4>
+									<div class="popup__textarea-block">
+										<textarea class="popup__textarea"></textarea>
+										<div class="popup__textarea-counter">0/50</div>
+									</div>
+								</div>
+							</div>
+							<div class="popup__end-block">
+								<div class="popup__end-row df">
+									<div class="popup__end-total">$35</div>
+									<div class="popup__post-block">
+										<button class="popup__post popup__post_lock unselect" data-product="visual">
+											<span>Add To Cart</span>
+										</button>
+										<a class="popup__post-link" href="__">Show Contract</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup-service" data-popup-name="mixingAndMastering">
+		<div class="popup__body df">
+			<div class="popup__window">
+				<div class="popup__close-row df">
+					<div class="popup__close-block">
+						<button class="popup__close" data-popup="mixingAndMastering">
+							<span class="icon-close"></span>
+						</button>
+					</div>
+				</div>
+				<div class="popup__title-block df">
+					<h2 class="popup__title">Service</h2>
+					<div class="popup__title-decoration"></div>
+					<h3 class="popup__subtitle">Mixing & Mastering</h3>
+				</div>
+				<div class="popup__row df">
+					<div class="popup__column popup__column_1 df">
+						<div class="popup__content">
+							<div class="popup__content-item">
+								<h4 class="popup__content-title">About</h4>
+								<p class="popup__content-text">This service was created for people who want to improve their sound. If you want to reach music industry level, that type of service will be your best friend.</p>
+							</div>
+							<div class="popup__content-item">
+								<h4 class="popup__list-title">Features</h4>
+								<ul class="popup__list">
+									<li class="popup__list-item">Every Person can easily get high quality sound.</li>
+									<li class="popup__list-item">You will recieve the final product 48 hours after placing an order.</li>
+									<li class="popup__list-item">Experienced sound engineers will be working with your songs and their work will never leave you indifferent.</li>
+								</ul>
+							</div>
+							<div class="popup__content-item popup__list-block">
+								<h4 class="popup__list-title">You Get</h4>
+								<ul class="popup__list">
+									<li class="popup__list-item">Mixed & Mastered song</li>
+									<li class="popup__list-item">Industry level sound</li>
+									<li class="popup__list-item">High quality service</li>
+								</ul>
+							</div>
+							<div class="popup__content-item popup__content-logo">
+								<img class="unselect" src="../images/logo/logo.svg" alt="Cloudy Motion">
+							</div>
+						</div>
+					</div>
+					<div class="popup__column popup__column_2 df">
+						<div class="popup__result df">
+							<div class="popup__input-contain">
+								<div class="popup__content-item popup__list-block">
+									<h4 class="popup__list-title">Required</h4>
+									<ul class="popup__list">
+										<li class="popup__list-item">Email eddress the artwork will be sent to</li>
+										<li class="popup__list-item">Good quality recordings</li>
+										<li class="popup__list-item">Upload a beat for the song</li>
+										<li class="popup__list-item">Every type of vocals should be separated in files</li>
+										<li class="popup__list-item">Choose the format of the file you will recieve</li>
+									</ul>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Email</h4>
+									<div class="popup__input-block popup__input-block_text">
+										<input class="popup__input popup__input_text" type="email">
+										<span class="popup__input-placeholder unselect">example@email.com</span>
+									</div>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Files For Mixing</h4>
+									<div class="popup__dbl-info-block">
+										<div class="popup__dbl-info">File format : Wav/Mp3/M4a</div>
+										<div class="popup__dbl-info">Max weight : 30Mb</div>
+									</div>
+									<div class="popup__input-block">
+										<input class="popup__input_file" type="file" accept=".mp3, .wav, .m4a" data-get="beat" data-popup-file="mixingAndMastering">
+									</div>
+									<div class="popup__filearea">
+										<div class="filearea filearea_empty df" data-popup-area="mixingAndMastering">
+											<div class="filearea__lay" data-popup-area="mixingAndMastering"></div>
+											<div class="filearea__text">Upload your<br> files here</div>
+											<div class="filearea__row df">
+												<div class="filearea__column filearea__column_1 df">
+													<div class="filearea__list">
+														<div class="filearea__item filearea__item_1 filearea__item_empty unselect df">
+															<div class="filearea__item-column">
+																<div class="filearea__filename-block df">filename.mp3</div>
+															</div>
+															<div class="filearea__item-column">
+																<div class="filearea__btn-row df">
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-change">
+																			<span class="icon-refresh"></span>
+																		</button>
+																	</div>
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-close">
+																			<span class="icon-close"></span>
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="filearea__item filearea__item_2 filearea__item_empty unselect df">
+															<div class="filearea__item-column">
+																<div class="filearea__filename-block df">filename.mp3</div>
+															</div>
+															<div class="filearea__item-column">
+																<div class="filearea__btn-row df">
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-change">
+																			<span class="icon-refresh"></span>
+																		</button>
+																	</div>
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-close">
+																			<span class="icon-close"></span>
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="filearea__item filearea__item_3 filearea__item_empty unselect df">
+															<div class="filearea__item-column">
+																<div class="filearea__filename-block df">filename.mp3</div>
+															</div>
+															<div class="filearea__item-column">
+																<div class="filearea__btn-row df">
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-change">
+																			<span class="icon-refresh"></span>
+																		</button>
+																	</div>
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-close">
+																			<span class="icon-close"></span>
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="filearea__item filearea__item_4 filearea__item_empty filearea__item_notrequired unselect df">
+															<div class="filearea__item-column">
+																<div class="filearea__filename-block df">filename.mp3</div>
+															</div>
+															<div class="filearea__item-column">
+																<div class="filearea__btn-row df">
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-change">
+																			<span class="icon-refresh"></span>
+																		</button>
+																	</div>
+																	<div class="filearea__btn-block">
+																		<button class="filearea__btn filearea__btn-close">
+																			<span class="icon-close"></span>
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filearea__column filearea__column_2 df">
+													<div class="filearea__panel-block df">
+														<button class="filearea__panel-btn df" data-popup-setfile="mixingAndMastering">
+															<svg class="filearea__panel-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 0C23.4477 0 23 0.447708 23 1V23H1C0.447693 23 0 23.4477 0 24C0 24.5523 0.447693 25 1 25H23V47C23 47.5523 23.4477 48 24 48C24.5523 48 25 47.5523 25 47V25H47C47.5523 25 48 24.5523 48 24C48 23.4477 47.5523 23 47 23H25V1C25 0.447708 24.5523 0 24 0Z" fill="#ECF1FF"/></svg>
+															<span class="filearea__panel-text">Click To Uploud</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Output Format</h4>
+									<div class="popup__input-block">
+										<div class="popup__input-select">
+											<div class="popup__input-option-current unselect">Mp3</div>
+											<div class="popup__input-select-body">
+												<div class="popup__input-option popup__input-option_current unselect" data-value="mp3">Mp3</div>
+												<div class="popup__input-option unselect" data-value="wav">Wav</div>
+												<div class="popup__input-option unselect" data-value="m4a">M4a</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="popup__end-block">
+								<div class="popup__end-row df">
+									<div class="popup__end-total">$40</div>
+									<div class="popup__post-block">
+										<button class="popup__post popup__post_lock unselect" data-product="mixingAndMastering">
+											<span>Add To Cart</span>
+										</button>
+										<a class="popup__post-link" href="__">Show Contract</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup-service" data-popup-name="order">
+		<div class="popup__body df">
+			<div class="popup__window">
+				<div class="popup__close-row df">
+					<div class="popup__close-block">
+						<button class="popup__close">
+							<span class="icon-close"></span>
+						</button>
+					</div>
+				</div>
+				<div class="popup__title-block df">
+					<h2 class="popup__title">Service</h2>
+					<div class="popup__title-decoration"></div>
+					<h3 class="popup__subtitle">Beat For Order</h3>
+				</div>
+				<div class="popup__row df">
+					<div class="popup__column popup__column_1 df">
+						<div class="popup__content">
+							<div class="popup__content-item">
+								<h4 class="popup__content-title">About</h4>
+								<p class="popup__content-text">Didn't find a beat that matches your style? Want to get a brand new beat? We can easily deal with that problem by just making one specially for you.</p>
+							</div>
+							<div class="popup__content-item popup__list-block">
+								<h4 class="popup__list-title">Features</h4>
+								<ul class="popup__list">
+									<li class="popup__list-item">You will recieve the final product in a 3 day period</li>
+									<li class="popup__list-item">Discuss every aspect of the beat you are placing an order for</li>
+									<li class="popup__list-item">Experienced producers will be working with the beat you are going to get</li>
+								</ul>
+							</div>
+							<div class="popup__content-item popup__list-block">
+								<h4 class="popup__list-title">You Get</h4>
+								<ul class="popup__list">
+									<li class="popup__list-item">The type of a beat you need</li>
+									<li class="popup__list-item">Fast feedback</li>
+									<li class="popup__list-item">High quality service</li>
+								</ul>
+							</div>
+							<div class="popup__content-item popup__content-logo">
+								<img class="unselect" src="../images/logo/logo.svg" alt="Cloudy Motion">
+							</div>
+						</div>
+					</div>
+					<div class="popup__column popup__column_2 df">
+						<div class="popup__result df">
+							<div class="popup__input-contain">
+								<div class="popup__content-item popup__list-block">
+									<h4 class="popup__list-title">Required</h4>
+									<ul class="popup__list">
+										<li class="popup__list-item">Email eddress the beat will be sent to</li>
+										<li class="popup__list-item">Tell us the way you want the beat look like</li>
+										<li class="popup__list-item">Select the arrangement type</li>
+										<li class="popup__list-item">Choose the format</li>
+									</ul>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Email</h4>
+									<div class="popup__input-block popup__input-block_text">
+										<input class="popup__input popup__input_text" type="email">
+										<span class="popup__input-placeholder unselect">example@email.com</span>
+									</div>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Tell us your wishes</h4>
+									<div class="popup__textarea-block">
+										<textarea class="popup__textarea"></textarea>
+										<div class="popup__textarea-counter"></div>
+									</div>
+								</div>
+								<div class="popup__input-item">
+									<h4 class="popup__input-title">Select the arrangement</h4>
+									<div class="popup__input-block">
+										<div class="popup__input-select">
+											<div class="popup__input-option-current unselect">Intro/verse/hook/verse/outro</div>
+											<div class="popup__input-select-body">
+												<div class="popup__input-option popup__input-option_current unselect" data-value="intro">Intro/verse/hook/verse/outro</div>
+												<div class="popup__input-option unselect" data-value="hook">Intro/hook/verse/hook/verse/hook/outro</div>
+												<div class="popup__input-option unselect" data-value="outro">Intro/verse/hook/bridge/verse/hook/outro</div>
+												<div class="popup__input-option unselect" data-value="outro">Intro/hook/verse/bridge/hook/verse/hook/outro</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="popup__end-block">
+								<div class="popup__end-row df">
+									<div class="popup__end-total">$100</div>
+									<div class="popup__post-block">
+										<button class="popup__post popup__post_lock unselect" data-product="order">
+											<span>Add To Cart</span>
+										</button>
+										<a class="popup__post-link" href="__">Show Contract</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup-beat" data-beat="blow-ya-mind">
+		<div class="popup__body df">
+			<div class="popup__window">
+				<div class="popup__beat-info df">
+					<div class="popup__close-block_beat">
+						<button class="popup__close">
+							<span class="icon-close"></span>
+						</button>
+					</div>
+					<div class="popup__beat-preview-blur bgi"></div>
+					<div class="popup__info-content">
+						<div class="popup__info-row df">
+							<div class="popup__info-column popup__info-column_1">
+								<div class="popup__preview-block">
+									<img class="popup__preview" src="#" alt="Track Preview">
+								</div>
+							</div>
+							<div class="popup__info-column popup__info-column_2">
+								<div class="popup__info-text-block">
+									<h2 class="popup__track-name">Track Name</h2>
+									<h3 class="popup__type-beat"><span class="popup__type-beat-author"></span> Type Beat</h3>
+									<div class="popup__characteristics-row df">
+										<div class="popup__characteristic-column df">
+											<div class="popup__characteristic-item df">
+												<div class="popup__characteristic-icon-block">
+													<span class="popup__characteristic-icon icon-timing"></span>
+												</div>
+												<div class="popup__characteristic-value popup__characteristic_timing"></div>
+											</div>
+										</div>
+										<div class="popup__characteristic-column df">
+											<div class="popup__characteristic-item df">
+												<div class="popup__characteristic-icon-block">
+													<span class="popup__characteristic-icon icon-bpm"></span>
+												</div>
+												<div class="popup__characteristic-value popup__characteristic_bpm"></div>
+											</div>
+										</div>
+										<div class="popup__characteristic-column df">
+											<div class="popup__characteristic-icon-block df">
+												<span class="popup__characteristic-icon icon-music-key"></span>
+											</div>
+											<div class="popup__characteristic-value popup__characteristic_key"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popup__beat-content-wrapper">
+					<div class="popup__beat-content">
+						<div class="popup__beat-types-list">
+							<div class="popup__beat-type beat-type beat-type_blue">
+								<span class="beat-type__background-icon icon-wav"></span>
+								<div class="beat-type__row df">
+									<div class="beat-type__column_1 df">
+										<div class="beat-type__content">
+											<h4 class="beat-type__title">Wav Lease</h4>
+											<ul class="beat-type__list_mobile">
+												<li class="beat-type__list-item">• Used for profit</li>
+												<li class="beat-type__list-item">• Music video allowed</li>
+												<li class="beat-type__list-item">• Up to 5k audio streams</li>
+											</ul>
+											<div class="beat-type__text-block">
+												<p class="beat-type__text">Wav lease gives you the opportunity to get a beat and use this in the future as an instrumental for your track.</p>
+											</div>
+											<div class="beat-type__btn-block">
+												<button class="beat-type__add" data-beat-type="wav"><span class="icon-cart"></span></button>
+											</div>
+										</div>
+									</div>
+									<div class="beat-type__column_2 df">
+										<div class="beat-type__info df">
+											<div></div>
+											<ul class="beat-type__list">
+												<li class="beat-type__list-item">• Used for profit</li>
+												<li class="beat-type__list-item">• Music video allowed</li>
+												<li class="beat-type__list-item">• Up to 5k audio streams</li>
+											</ul>
+											<div class="beat-type__support-block">Limited Rights</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="popup__beat-type beat-type beat-type_pink">
+								<span class="beat-type__background-icon icon-stems"></span>
+								<div class="beat-type__row df">
+									<div class="beat-type__column_1 df">
+										<div class="beat-type__content">
+											<h4 class="beat-type__title">Stems Lease</h4>
+											<div class="beat-type__text-block">
+												<p class="beat-type__text">Stems lease can help you to make the song sound more professional and it’s easier to achieve the perfect sound.</p>
+											</div>
+											<div class="beat-type__btn-block">
+												<button class="beat-type__add" data-beat-type="stems"><span class="icon-cart"></span></button>
+											</div>
+										</div>
+									</div>
+									<div class="beat-type__column_2 df">
+										<div class="beat-type__info df">
+											<div></div>
+											<ul class="beat-type__list">
+												<li class="beat-type__list-item">• Includes beat trackout</li>
+												<li class="beat-type__list-item">• Perfect option for mixing</li>
+												<li class="beat-type__list-item">• Up to 10k audio streams</li>
+											</ul>
+											<div class="beat-type__support-block">Limited Rights</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="popup__beat-type beat-type beat-type_yellow">
+								<span class="beat-type__background-icon icon-beats"></span>
+								<div class="beat-type__row df">
+									<div class="beat-type__column_1 df">
+										<div class="beat-type__content">
+											<h4 class="beat-type__title">Exclusive</h4>
+											<div class="beat-type__text-block">
+												<p class="beat-type__text">Exclusive beats will give you 100% of it’s rights. After the purchase it will immediately be taken off the market.</p>
+											</div>
+											<div class="beat-type__btn-block">
+												<button class="beat-type__add" data-beat-type="exclusive"><span class="icon-cart"></span></button>
+											</div>
+										</div>
+									</div>
+									<div class="beat-type__column_2 df">
+										<div class="beat-type__info df">
+											<div></div>
+											<ul class="beat-type__list">
+												<li class="beat-type__list-item">• Unlimited rights</li>
+												<li class="beat-type__list-item">• The best for industry level</li>
+												<li class="beat-type__list-item">• No audio streams limit</li>
+											</ul>
+											<div class="beat-type__support-block">Unlimited Rights</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="alert alert_delete">
+		<div class="alert__background"></div>
+		<div class="alert__wrapper">
+			<div class="alert__row alert__row_1 df">
+				<div class="alert__column alert__column_1 df">
+					<div class="alert__content">
+						<h2 class="alert__title"></h2>
+						<p class="alert__text"></p>
+					</div>
+				</div>
+				<div class="alert__column alert__column_2 df">
+					<div class="alert__symbol-block">
+						<span class="alert__symbol unselect">!</span>
+					</div>
+				</div>
+			</div>
+			<div class="alert__row alert__row_2 df">
+				<div class="alert__column alert__column_3 df">
+					<div class="alert__support-block">
+						<a class="alert__support unselect" href="mailto:cloudymotion93@gmail.com">Support</a>
+					</div>
+				</div>
+				<div class="alert__column alert__column_4 df">
+					<div class="alert__btn-block">
+						<button class="alert__close unselect">
+							<span>Ok</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="alert__row alert__row_3">
+				<div class="alert__column alert__column_3 df">
+					<div class="alert__support-block">
+						<a class="alert__support unselect" href="mailto:cloudymotion93@gmail.com">Support</a>
+					</div>
+				</div>
+				<div class="alert__column alert__column_4 df">
+					<div class="alert__btn-row df">
+						<div class="alert__btn-block">
+							<button class="alert__confirm-btn unselect">
+								<span>Ok</span>
+							</button>
+						</div>
+						<div class="alert__btn-block">
+							<button class="alert__cancel-btn unselect">
+								<span>Cancel</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="inner-shadow"></div>
+	<div class="beforePlayer"></div>
+	<script src="../scripts/store.js"></script>
+	<script src="https://www.paypal.com/sdk/js?client-id=ARStEJmfhHgNuzbpP8ihXdHrxZymHBBOXz6wBnY_6czL8m-A8ECmqM34EkHxVPDaT4VPV1vt-Yb7aD7H&disable-funding=credit&currency=USD&commit=false"></script>
+	<script>
+		paypal.Buttons({
+			// Sets up the transaction when a payment button is clicked
+			createOrder: function(data, actions) {
+				return actions.order.create({
+					purchase_units: [{
+						amount: {
+							value: '0.01' // Can reference variables or functions. Example: value: document.getElementById('...').value
+						}
+					}]
+				});
+			},
+
+			// Finalize the transaction after payer approval
+			onApprove: function(data, actions) {
+				return actions.order.capture().then(function(orderData) {
+				// Successful capture! For dev/demo purposes:
+				console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+				var transaction = orderData.purchase_units[0].payments.captures[0];
+				alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+
+				// When ready to go live, remove the alert and show a success message within this page. For example:
+				// var element = document.getElementById('paypal-button-container');
+				// element.innerHTML = '';
+				// element.innerHTML = '<h3>Thank you for your payment!</h3>';
+				// Or go to another URL:  actions.redirect('thank_you.html');
+				});
+			}
+		}).render('#payment-container');
+	</script>
+</body>
+</html>
