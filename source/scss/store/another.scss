@@ -1,0 +1,265 @@
+/* icon font */
+
+/* Latin */
+@font-face {
+	font-family: 'Kaushan Script';
+	src: url('../fonts/KaushanScript-Regular.eot');
+	src: local('☺'), url('../fonts/KaushanScript-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Latin */
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/Poppins-LightItalic.eot');
+	src: local('☺'), url('../fonts/Poppins-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Latin */
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/Poppins-MediumItalic.eot');
+	src: local('☺'), url('../fonts/Poppins-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Latin */
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/Poppins-SemiBold.eot');
+	src: local('☺'), url('../fonts/Poppins-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Latin */
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/Poppins-SemiBoldItalic.eot');
+	src: local('☺'), url('../fonts/Poppins-SemiBoldItalic.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'icon-font';
+	src:  url('../fonts/icon-font.eot?5rrwrt');
+	src:  url('../fonts/icon-font.eot?5rrwrt#iefix') format('embedded-opentype'),
+	url('../fonts/icon-font.ttf?5rrwrt') format('truetype'),
+	url('../fonts/icon-font.woff?5rrwrt') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'League Spartan';
+	src: url('../fonts/LeagueSpartan-Bold.eot');
+	src: local('☺'), url('../fonts/LeagueSpartan-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icon-font' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pause:before {content: "\e900";}
+.icon-play:before {content: "\e901";}
+.icon-next:before {content: "\e902";}
+.icon-back:before {content: "\e903";}
+.icon-speaker_medium:before {content: "\e904";}
+.icon-speaker_low:before {content: "\e905";}
+.icon-music-key:before {content: "\e906";}
+.icon-bpm:before {content: "\e907";}
+.icon-speaker_mute:before {content: "\e908";}
+.icon-order:before {content: "\e909";}
+.icon-soundcloud:before {content: "\e90a";}
+.icon-telegram:before {content: "\e90b";}
+.icon-visuals:before {content: "\e90c";}
+.icon-youtube:before {content: "\e90d";}
+.icon-artwork:before {content: "\e90e";}
+.icon-beats:before {content: "\e90f";}
+.icon-cart:before {content: "\e910";}
+.icon-chat:before {content: "\e911";}
+.icon-check:before {content: "\e912";}
+.icon-clock:before {content: "\e913";}
+.icon-close:before {content: "\e914";}
+.icon-down:before {content: "\e915";}
+.icon-email:before {content: "\e916";}
+.icon-grow:before {content: "\e917";}
+.icon-hexagon:before {content: "\e918";}
+.icon-hundred:before {content: "\e919";}
+.icon-idea:before {content: "\e91a";}
+.icon-instagram:before {content: "\e91b";}
+.icon-options:before {content: "\e91c";}
+.icon-sharp:before {content: "\e91d";}
+.icon-timing:before {content: "\e91e";}
+.icon-tools:before {content: "\e91f";}
+.icon-share:before {content: "\e920";}
+.icon-download:before {content: "\e921";}
+.icon-refresh:before {content: "\e922";}
+.icon-wav:before {content: "\e923";}
+.icon-stems:before {content: "\e924";}
+.icon-butterfly:before {content: "\e925";}
+
+// Миксины
+
+@mixin сontain($w){
+	max-width: $w + $mm * 2;
+	padding: 0 $mm;
+	margin: 0 auto;
+}
+
+
+// Блоки
+
+// Контейнер
+.container{
+	@include сontain($maw);
+}
+
+// display: flex
+.df {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -o-flex;
+	display: -ms-flex;
+	display: flex;
+}
+
+// background-image styles
+.bgi {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+//Кнопка
+// .btn {
+	
+// }
+
+// Заголовочные разграничители
+.title-block {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 0 48px;
+
+	font-size: 78px;
+	font-family: "Kaushan Script", Poppins, sans-serif;
+
+	&__title {
+		font-size: inherit;
+		font-family: inherit;
+		color: rgba($tc, .9);
+		line-height: 90%;
+		// text-shadow: 0 0 2px $pc, 0 0 4px $pc, 0 0 6px $pc;
+		z-index: 1;
+	}
+}
+
+// Теневой слой при нажатии на бургер
+.inner-shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(#000, .4);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity $as $es;
+	z-index: 100;
+
+	&.show {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+body.lock_important {
+	overflow: hidden;
+}
+
+body {
+	background-image: url("../images/store/pattern/pattern_desktop.jpg");
+	background-size: contain;
+	background-position: center 0;
+	background-repeat: repeat-y;
+}
+
+@media screen and (max-width: 480px){
+	body {
+		background-image: url("../images/store/pattern/pattern_mobile.jpg");
+	}
+}
+
+// Элементы без возможности выделения
+.unselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+section + section {
+	margin: 54px 0 0;
+}
+
+@media screen and (max-width: $md4){
+	section + section {
+		margin: 36px 0 0;
+	}
+
+	.title-block {
+		font-size: 58px;
+		margin: 0 0 35px;
+	}
+}
+
+// Цвет при выделении
+::selection {background: $mc; color: #fff;}
+::-moz-selection {background: $mc; color: #fff;}
+::-webkit-selection {background: $mc; color: #fff;}
+
+// Scrollbar
+::-webkit-scrollbar {
+	width: 3.5px;
+}
+::-webkit-scrollbar-button {
+	display: none;
+}
+::-webkit-scrollbar-track {
+	background-color: $bgc;
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgba($pc, .8);
+	border-radius: 4px;
+	&:hover {
+		background-color: rgba($pc, .9);
+	}
+}

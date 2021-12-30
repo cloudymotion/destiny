@@ -1,0 +1,12 @@
+@mixin slim(){
+	padding: 0 70px;
+}
+
+@import "../init.scss";
+@import "start.scss";
+@import "../null.scss";
+@import "../aos.scss";
+@import "style.scss";
+@import "../player.scss";
+@import "../swiper.scss";
+@import "another.scss";
