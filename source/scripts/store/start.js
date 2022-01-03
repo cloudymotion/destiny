@@ -9,7 +9,7 @@ trackList = [
 		trackName: "On The Inside",
 		typeBeat: "_Lil Loaded_ Type Beat",
 		musicalCharacteristic: "120|Cm",
-		timing: "2:24",
+		timing: "2:26",
 	},
 	{
 		trackName: "Destiny",
