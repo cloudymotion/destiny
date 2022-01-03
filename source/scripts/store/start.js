@@ -6,6 +6,12 @@ let
 
 trackList = [
 	{
+		trackName: "On The Inside",
+		typeBeat: "_Lil Loaded_ Type Beat",
+		musicalCharacteristic: "120|Cm",
+		timing: "2:24",
+	},
+	{
 		trackName: "Destiny",
 		typeBeat: "_Landon Cube_ Type Beat",
 		musicalCharacteristic: "145|Cm",
